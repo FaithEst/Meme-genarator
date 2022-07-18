@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+/* -------- Header Component -------- */
+.header{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+.header--logo{
+    width: 40px;
+    margin-right: 8px;
+}
+.header--subtitle{
+    margin-left: auto;
+}
+section{
+    padding: 40px;
+}
+/* -------- Meme Component ------ */
+.form{
+    width: 80%;
+    margin: auto;
+}
+/* div with the inputs */
+.forms--input{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.form-input{
+    width: 330px;
+    height: 50px;
+    border: solid 1px #D5D4D8;
+    border-radius: 6px;
+    text-indent: 6px;
+    font-family: 'Karla', sans-serif;
+}
+.form--button{
+    width: 100%;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    border-style: none;
+    color: white;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
