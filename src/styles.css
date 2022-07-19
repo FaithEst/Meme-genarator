@@ -58,3 +58,16 @@ section{
     font-family: 'Karla', sans-serif;
     cursor: pointer;
 }
+.form--image{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: solid 1px #D5D4D8;
+}
+.meme--image{
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
