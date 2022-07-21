@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import Meme from "./components/Meme";
-import Practice from "./components/practice/Practice";
+import Test from "./components/count/Test";
 
 function App() {
   return (
     <>
-      <Practice />
+      <Test />
     </>
   );
 }
