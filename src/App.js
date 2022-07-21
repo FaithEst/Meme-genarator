@@ -1,11 +1,9 @@
-import Header from "./components/Header";
-import Meme from "./components/Meme";
-import Test from "./components/count/Test";
+import TestContact from "./components/contact/TestContact";
 
 function App() {
   return (
     <>
-      <Test />
+      <TestContact />
     </>
   );
 }
