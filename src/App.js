@@ -1,9 +1,9 @@
-import TestContact from "./components/contact/TestContact";
+import Boxes from "./components/boxes/TestBox";
 
 function App() {
   return (
     <>
-      <TestContact />
+      <Boxes />
     </>
   );
 }
