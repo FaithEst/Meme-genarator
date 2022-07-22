@@ -23,10 +23,26 @@ export default function Boxes() {
      *    backgroundColor to "#222222". If off, set it to "none"
      */
 
+    /**
+     * Challenge part 4: Create a toggle() function that logs
+     * "clicked!" to the console
+     * 
+     * Pass that function down to each of the Box components
+     * and set it up so when they get clicked it runs the function
+     */
+
     const [boxesArray, setBoxesArray] = useState(boxes);
+    function toggle(id){
+        console.log(id);
+    }
     const boxElements = boxesArray.map(box => {
         return(
-            <Box on={box.on} id={box.id}/>
+            <Box 
+                on={box.on} 
+                id={box.id}
+                key={box.id}
+                toggle={toggle}
+            />
         )
     })
     return (
