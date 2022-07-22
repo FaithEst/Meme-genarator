@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import './box.css';
 
  /**
@@ -11,19 +11,15 @@ import './box.css';
    * 
    * Goal: clicking each box should toggle it on and off.
    */
+
+
   
 export default function Box(props){
-    const [on, setOn] = useState(props.on);
-
     const styles = {
-        backgroundColor: on ? "#222222" : "transparent"
-    }
-
-    function toggleColor(){
-        setOn(prevOn => !prevOn)
+        backgroundColor: props.on ? "#222222" : "transparent"
     }
     
     return(
-        <div onClick={toggleColor} style={styles} className="box" ></div>
+        <div onClick={() => props.toggle(props.id)} style={styles} className="box" ></div>
     )
 }
