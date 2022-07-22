@@ -31,9 +31,25 @@ export default function Boxes() {
      * and set it up so when they get clicked it runs the function
      */
 
+    /**
+         * Challenge: use setSquares to update the
+         * correct square in the array.
+         * 
+         * Make sure not to directly modify state!
+         * 
+         * Hint: look back at the lesson on updating arrays
+         * in state if you need a reminder on how to do this
+         */
+
     const [boxesArray, setBoxesArray] = useState(boxes);
     function toggle(id){
-        console.log(id);
+            setBoxesArray(prevBoxesArray => {
+                return(
+                    prevBoxesArray.map(box => {
+                        return box.id === id ? {...box, on: !box.on} : box
+                    }
+                ))
+            })
     }
     const boxElements = boxesArray.map(box => {
         return(
